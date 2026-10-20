@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Kiều Duy Vinh – FullStack Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Kiều Duy Vinh" />
+  <title>Kiều Duy Vinh · FullStack Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span class="brand-name">Kiều Duy Vinh</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Kiều Duy Vinh</h1>
+          <p class="hero-role">FullStack Developer</p>
+          <p class="hero-desc">
+            Tôi là một lập trình viên trẻ yêu thích công nghệ và phát triển Web. 
+            Tôi tập trung xây dựng những giao diện hiện đại, thân thiện, dễ sử dụng và tương thích trên nhiều thiết bị.
+
+            Tôi luôn không ngừng học hỏi, khám phá những công nghệ mới và từng bước hoàn thiện kỹ năng để 
+            tạo ra những sản phẩm chỉn chu, hữu ích và mang lại trải nghiệm tốt cho người dùng.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="assets/img/kdvinh.jpg"
+            alt="Ảnh đại diện của Kiều Duy Vinh"
+            width="320" height="320" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">CSS</li>
+          <li class="skill-chip">JavaScript</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">GitHub</li>
+          <li class="skill-chip">Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/Nấm.jpg"
+              alt="Ảnh minh họa dự án Landing Page" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Phân loại Nấm</h3>
+              <p class="card-desc">
+                Trang web giúp phân loại các loại nấm dựa trên hình ảnh.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/chuviet.jpg"
+              alt="Ảnh minh họa dự án Todo App" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Nhận dạng chữ viết</h3>
+              <p class="card-desc">
+                Ứng dụng nhận dạng chữ viết tay bằng công nghệ AI.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Python</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/thoitiet.jpg"
+              alt="Ảnh minh họa dự án Weather Dashboard" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Dự báo thời tiết</h3>
+              <p class="card-desc">
+                Bảng điều khiển thời tiết lấy dữ liệu từ API công khai, hiển thị theo thẻ.
+              </p>
+              <ul class="tag-list">
+                <li>API</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+              src="./assets/img/vietnam.jpg"
+              alt="Ảnh minh họa dự án VietNam Travel" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">VietNam Travel</h3>
+              <p class="card-desc">
+                Trang web du lịch Việt Nam với thông tin chi tiết về các điểm đến.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+                    <article class="card">
+            <img class="card-media"
+              src="./assets/img/lophoc.jpg"
+              alt="Ảnh minh họa dự án Điểm danh bằng camera AI" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Điểm danh bằng camera AI</h3>
+              <p class="card-desc">
+                Ứng dụng sử dụng camera để quay video và nhận dạng khuôn mặt, giúp điểm danh sinh viên một cách tự động.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>AI</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container contact-inner">
+        <h2 class="section-title">Liên hệ</h2>
+        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm FullStack</p>
+
+        <ul class="contact-list">
+          <li><span class="contact-label">Email</span> <a href="mailto:vinhquang123423.@example.com">vinhquang123423@example.com</a></li>
+          <li><span class="contact-label">GitHub</span> <a href="#">github.com/vinhghdhvv</a></li>
+          <li><span class="contact-label">LinkedIn</span> <a href="#">linkedin.com/in/kieuduyvinh</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Kiều Duy Vinh. Thiết kế &amp; xây dựng bằng HTML + CSS.</p>
+      <a href="#top" class="to-top"> ↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

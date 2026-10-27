@@ -53,7 +53,7 @@ Kết quả kiểm tra bước đầu:
 
 **Minh chứng:**
 
-![Kiểm thử tính đúng đắn](docs/screenshots/01_tinh_dung_dan.png)
+![Kiểm thử tính đúng đắn](01_tinh_dung_dan.jpg)
 
 ### 3.2. Giao diện và trải nghiệm người dùng (UI/UX)
 
@@ -77,7 +77,7 @@ Các nội dung cần đánh giá:
 
 **Minh chứng:**
 
-![Kiểm thử giao diện UI UX](docs/screenshots/02_ui_ux.png)
+![Kiểm thử giao diện UI UX](02_ui_ux.jpg)
 
 ### 3.3. Khả năng vận hành và xử lý lỗi
 
@@ -111,7 +111,7 @@ py -m http.server 8000 --bind 127.0.0.1
 
 **Minh chứng:**
 
-![Kiểm thử khả năng vận hành](docs/screenshots/03_van_hanh.png)
+![Kiểm thử khả năng vận hành](03_van_hanh.jpg)
 
 ### 3.4. Bảo mật
 
@@ -133,7 +133,7 @@ Website tĩnh có phạm vi tấn công phía máy chủ nhỏ hơn ứng dụng
 
 **Minh chứng:**
 
-![Kiểm thử bảo mật](docs/screenshots/04_bao_mat.png)
+![Kiểm thử bảo mật](04_bao_mat.jpg)
 
 ### 3.5. Chất lượng mã nguồn
 
@@ -178,7 +178,7 @@ KT A2.1/
 
 **Minh chứng:**
 
-![Kiểm thử chất lượng mã nguồn](docs/screenshots/05_chat_luong_ma_nguon.png)
+![Kiểm thử chất lượng mã nguồn](05_chat_luong_ma_nguon.jpg)
 
 ### 3.6. Khả năng triển khai
 
@@ -211,7 +211,7 @@ Website Portfolio có thể chạy trên máy tính cá nhân bằng Python HTTP
 
 **Minh chứng:**
 
-![Kiểm thử khả năng triển khai](docs/screenshots/06_kha_nang_trien_khai.png)
+![Kiểm thử khả năng triển khai](06_kha_nang_trien_khai.jpg)
 
 ---
 
@@ -240,12 +240,12 @@ Thư mục dự kiến lưu ảnh kiểm thử:
 
 | STT | Tên ảnh | Nội dung minh chứng |
 |---|---|---|
-| 1 | `01_tinh_dung_dan.png` | Trang chủ và nội dung hiển thị |
-| 2 | `02_ui_ux.png` | Giao diện và bố cục website |
-| 3 | `03_van_hanh.png` | Terminal chạy Python HTTP Server |
-| 4 | `04_bao_mat.png` | Kiểm tra liên kết và mã nguồn |
-| 5 | `05_chat_luong_ma_nguon.png` | Cấu trúc thư mục HTML/CSS |
-| 6 | `06_kha_nang_trien_khai.png` | GitHub repository và cấu hình triển khai |
+| 1 | `01_tinh_dung_dan.jpg` | Trang chủ và nội dung hiển thị |
+| 2 | `02_ui_ux.jpg` | Giao diện và bố cục website |
+| 3 | `03_van_hanh.jpg` | Terminal chạy Python HTTP Server |
+| 4 | `04_bao_mat.jpg` | Kiểm tra liên kết và mã nguồn |
+| 5 | `05_chat_luong_ma_nguon.jpg` | Cấu trúc thư mục HTML/CSS |
+| 6 | `06_kha_nang_trien_khai.jpg` | GitHub repository và cấu hình triển khai |
 
 **Lưu ý:** Các hình ảnh cần được chụp từ chính website của Kiều Duy Vinh và lưu đúng tên trong thư mục `docs/screenshots/` để hiển thị trong báo cáo.
 

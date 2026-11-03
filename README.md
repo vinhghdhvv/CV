@@ -23,10 +23,13 @@ Website Portfolio bao gồm các chức năng:
 
 - Giới thiệu thông tin cá nhân.
 - Hiển thị kỹ năng và kiến thức chuyên môn.
-- Giới thiệu các dự án và sản phẩm đã thực hiện.
+- Giới thiệu các dự án đã thực hiện.
 - Hiển thị hình ảnh minh họa.
-- Cung cấp thông tin liên hệ.
-- Hỗ trợ giao diện trên máy tính và điện thoại.
+- Form liên hệ cho phép nhập họ tên, email và tin nhắn.
+- Kiểm tra các trường nhập bắt buộc và định dạng email.
+- Hiệu ứng fadeInDown cho tên khi tải trang.
+- Giao diện xanh chuyển màu Gradient.
+- Hỗ trợ Responsive trên máy tính và điện thoại.
 
 ## 3. Công nghệ sử dụng
 

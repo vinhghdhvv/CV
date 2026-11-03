@@ -195,18 +195,81 @@
     </section>
 
     <!-- ----- SECTION: Liên hệ ----- -->
-    <section id="contact" class="section">
-      <div class="container contact-inner">
-        <h2 class="section-title">Liên hệ</h2>
-        <p class="section-sub">Mở cho các cơ hội thực tập &amp; việc làm FullStack</p>
+    
+<!-- ----- SECTION: Liên hệ ----- -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title contact-title">Liên hệ</h2>
+    <p class="section-sub contact-sub">
+      Mở cho các cơ hội thực tập &amp; việc làm FullStack
+    </p>
 
-        <ul class="contact-list">
-          <li><span class="contact-label">Email</span> <a href="mailto:vinhquang123423.@example.com">vinhquang123423@example.com</a></li>
-          <li><span class="contact-label">GitHub</span> <a href="#">github.com/vinhghdhvv</a></li>
-          <li><span class="contact-label">LinkedIn</span> <a href="#">linkedin.com/in/kieuduyvinh</a></li>
-        </ul>
+    <div class="contact-wrapper">
+
+      <!-- Thông tin liên hệ bên trái -->
+      <div class="contact-info">
+        <h3>Thông tin liên hệ</h3>
+
+        <p>✉️ Email:
+          <a href="mailto:vinhquang123423@example.com">
+            vinhquang123423@example.com
+          </a>
+        </p>
+
+        <p>💻 GitHub:
+          <a href="https://github.com/vinhghdhvv"
+             target="_blank" rel="noopener noreferrer">
+            github.com/vinhghdhvv
+          </a>
+        </p>
+
+        <p>🔗 LinkedIn:
+          <a href="https://www.linkedin.com/in/kieuduyvinh/"
+             target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/kieuduyvinh
+          </a>
+          <p>📍Hà Đông, Hà Nội, Việt Nam</p>
+        </p>
       </div>
-    </section>
+
+      <!-- Form liên hệ bên phải -->
+      <form class="contact-form" id="contactForm">
+
+        <div class="form-row">
+          <input
+            type="text"
+            name="name"
+            placeholder="Họ và tên"
+            aria-label="Họ và tên"
+            required
+          >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email của bạn"
+            aria-label="Email của bạn"
+            required
+          >
+        </div>
+
+        <textarea
+          name="message"
+          placeholder="Nhập nội dung tin nhắn..."
+          aria-label="Nội dung tin nhắn"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit" class="contact-btn">
+          GỬI TIN NHẮN ➤
+        </button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
 
   </main>
 

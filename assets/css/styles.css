@@ -453,3 +453,171 @@ ul {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* ===== CONTACT SECTION ===== */
+
+.contact-section {
+  background: #ffffff;
+  padding: 75px 20px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 32px;
+  color: #08244a;
+  margin-bottom: 12px;
+}
+
+.contact-sub {
+  text-align: center;
+  color: #0a0606;
+  font-style: italic;
+  margin-bottom: 55px;
+}
+
+/* Chia 2 cột */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: start;
+}
+
+/* Thông tin bên trái */
+.contact-info h3 {
+  font-size: 21px;
+  color: #08244a;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.contact-info a {
+  color: #2563eb;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Form bên phải */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: inherit;
+  background: white;
+  color: #08244a;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* Nút gửi */
+.contact-btn {
+  align-self: flex-end;
+  padding: 15px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #1746b5;
+  transform: translateY(-2px);
+}
+
+/* Responsive điện thoại */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-title {
+    font-size: 27px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
+
+
+/* Nền xanh chuyển màu cho phần Liên hệ */
+#contact.contact-section {
+  background: linear-gradient(
+    180deg,
+    #5ca3e6 0%,
+    #a8cef2 45%,
+    #ffffff 100%
+  );
+}
+
+/* Giữ màu chữ đồng bộ */
+#contact .contact-title,
+#contact .contact-info h3 {
+  color: #08244a;
+}
+
+#contact .contact-info p {
+  color: #08244a;
+}
+
+
+/* ===== ANIMATION FADE IN DOWN CHO TÊN ===== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  animation: fadeInDown 1.5s ease-out both;
+}
